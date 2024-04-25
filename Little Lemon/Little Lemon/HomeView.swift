@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+@Environment(\.managedObjectContext) private var viewContext
+
+    
     var body: some View {
         VStack {
             TabView{
@@ -28,5 +32,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
 }

@@ -7,7 +7,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init() {
-        container = NSPersistentContainer(name: "ExampleDatabase")
+        container = NSPersistentContainer(name: "CoreDataModel")
         container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         container.loadPersistentStores(completionHandler: {_,_ in })
         container.viewContext.automaticallyMergesChangesFromParent = true
