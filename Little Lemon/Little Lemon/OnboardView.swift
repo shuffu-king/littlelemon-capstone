@@ -19,14 +19,22 @@ struct OnboardView: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
-                NavigationLink("", isActive: $isLoggedin) {
-                    HomeView()
+                HeaderView()
+                HeroView()
+                    .padding()
+                    .background(Color.primaryColor1)
+                    .frame(maxWidth: .infinity, maxHeight: 240)
+                NavigationLink(destination: HomeView(), isActive: $isLoggedin) { }
+                VStack {
+                    TextField("first name", text: $firstName)
+                    TextField("last name", text: $lastName)
+                    TextField("email", text: $email)
                 }
-                TextField("first name", text: $firstName)
-                TextField("last name", text: $lastName)
-                TextField("email", text: $email)
+                .textFieldStyle(.roundedBorder)
+                .autocorrectionDisabled()
+                .padding()
                 
                 Button("Register"){
                     if firstName.isEmpty || lastName.isEmpty {
@@ -43,7 +51,7 @@ struct OnboardView: View {
             }
             .onAppear(){
                 if UserDefaults.standard.bool(forKey: kIsLoggedIn) == true {
-                    
+                    isLoggedin = true
                 }
                 
             }

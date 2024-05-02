@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C104CBB2BE354330080AB45 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C104CBA2BE354330080AB45 /* HeaderView.swift */; };
+		3C36F9EC2BE327A4004547D1 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36F9EB2BE327A4004547D1 /* HeroView.swift */; };
+		3C36F9EE2BE3287C004547D1 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36F9ED2BE3287C004547D1 /* Styles.swift */; };
 		3C79FACB2BC72867007BC735 /* Little_LemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79FACA2BC72867007BC735 /* Little_LemonApp.swift */; };
 		3C79FACD2BC72867007BC735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79FACC2BC72867007BC735 /* ContentView.swift */; };
 		3C79FACF2BC72868007BC735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C79FACE2BC72868007BC735 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C104CBA2BE354330080AB45 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3C36F9EB2BE327A4004547D1 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		3C36F9ED2BE3287C004547D1 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		3C79FAC72BC72867007BC735 /* Little Lemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C79FACA2BC72867007BC735 /* Little_LemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_LemonApp.swift; sourceTree = "<group>"; };
 		3C79FACC2BC72867007BC735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,12 +79,15 @@
 				3C79FACA2BC72867007BC735 /* Little_LemonApp.swift */,
 				3CB801462BD478510033EE10 /* Models */,
 				3C79FACC2BC72867007BC735 /* ContentView.swift */,
-				3CCF9CF22BCD6B070099DCBC /* OnboardView.swift */,
 				3CCF9CFC2BCEE5720099DCBC /* UserProfileView.swift */,
 				3C79FACE2BC72868007BC735 /* Assets.xcassets */,
 				3CCF9CF62BCEBE110099DCBC /* HomeView.swift */,
 				3CCF9CF82BCEC7460099DCBC /* MenuView.swift */,
+				3CCF9CF22BCD6B070099DCBC /* OnboardView.swift */,
 				3C79FAD02BC72868007BC735 /* Preview Content */,
+				3C36F9EB2BE327A4004547D1 /* HeroView.swift */,
+				3C36F9ED2BE3287C004547D1 /* Styles.swift */,
+				3C104CBA2BE354330080AB45 /* HeaderView.swift */,
 			);
 			path = "Little Lemon";
 			sourceTree = "<group>";
@@ -182,6 +191,8 @@
 			files = (
 				3CCF9CF92BCEC7460099DCBC /* MenuView.swift in Sources */,
 				3CCF9CFD2BCEE5720099DCBC /* UserProfileView.swift in Sources */,
+				3C36F9EE2BE3287C004547D1 /* Styles.swift in Sources */,
+				3C36F9EC2BE327A4004547D1 /* HeroView.swift in Sources */,
 				3CB801522BD82B9A0033EE10 /* CoreDataModel.xcdatamodeld in Sources */,
 				3C79FACD2BC72867007BC735 /* ContentView.swift in Sources */,
 				3CB801442BD477D90033EE10 /* Persistence.swift in Sources */,
@@ -191,6 +202,7 @@
 				3C79FACB2BC72867007BC735 /* Little_LemonApp.swift in Sources */,
 				3CB801542BD8B4D40033EE10 /* FetchedObjects.swift in Sources */,
 				3CB8014A2BD4786E0033EE10 /* MenuItem.swift in Sources */,
+				3C104CBB2BE354330080AB45 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
