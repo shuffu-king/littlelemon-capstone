@@ -12,9 +12,10 @@ struct UserProfileView: View {
     let userLastName = UserDefaults.standard.string(forKey: lastNameKey)
     let userEmail = UserDefaults.standard.string(forKey: emailKey)
     @Environment(\.presentationMode) var presentation
-    
+        
     var body: some View {
         VStack {
+            
             Text("Personal Information")
             Image("profile-image-placeholder")
                 .resizable()
